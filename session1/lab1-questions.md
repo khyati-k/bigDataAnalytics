@@ -127,7 +127,7 @@ if __name__ == "__main__":
 
 | Provide your answer here. |
 | ------------------------- |
-|        O(n)                   |
+|        1                   |
 
 11. Is this a computationally or data-intensive task?
 
@@ -268,7 +268,8 @@ if __name__ == "__main__":
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|The loop runs from 0 to n-2 in the first step, 0 - n-3, 
+6+5+4+3+2+1 = 21                    |
 
 22. What is the time complexity of this script?
 
