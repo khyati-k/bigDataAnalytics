@@ -23,19 +23,19 @@ if __name__ == "__main__":
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|    o(n)                       |
 
 3. What is the space complexity of the above script?
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|         O(n)                  |
 
 4. Is this a computationally or data-intensive task?
 
-| Provide your answer here. |
+| Provide your answer here. | ?? 
 | ------------------------- |
-|                           |
+|            data           |
 
 > [!TIP]
 >
@@ -53,7 +53,7 @@ if __name__ == "__main__":
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|          O(1)                 |
 
 6. What is the time complexity of the following code?
 
@@ -69,7 +69,7 @@ if __name__ == "__main__":
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|           O(n)                |
 
 7. What is the time complexity of the following code?
 
@@ -87,13 +87,13 @@ if __name__ == "__main__":
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|            O(n)               |
 
 8. Is this a computationally or data-intensive task?
 
-| Provide your answer here. |
+| Provide your answer here. | ??
 | ------------------------- |
-|                           |
+|           data                |
 
 9. What is the time complexity of the following code?
 
@@ -117,7 +117,7 @@ if __name__ == "__main__":
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|          O(n)                |
 
 > [!IMPORTANT]
 >
@@ -127,13 +127,13 @@ if __name__ == "__main__":
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|        O(n)                   |
 
 11. Is this a computationally or data-intensive task?
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|            data               |
 
 12. Compare the following scripts; which one do you prefer and why?
 
@@ -174,13 +174,13 @@ if __name__ == "__main__":
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|          O(n2)                 |
 
 13. What is the space complexity of the previous script?
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|         O(n)                  |
 
 14. Examine the next code.
 
@@ -204,13 +204,13 @@ if __name__ == "__main__":
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|            bubble sort the array, compare with next element till arr is sorted               |
 
 16. What is the time complexity of this script?
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|          O(n2)                 |
 
 17. Analyse the Provided Code.
 
@@ -234,13 +234,13 @@ if __name__ == "__main__":
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|       bubble sort array                    |
 
 19. Why does it output 12?
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|      count is only updated if the if condition is met  |
 
 20. What is the purpose of the script?
 
