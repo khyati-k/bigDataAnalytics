@@ -23,7 +23,7 @@ if __name__ == "__main__":
 
 | Provide your answer here. |
 | ------------------------- |
-|    o(n)                       |
+|    o(n)                   |
 
 3. What is the space complexity of the above script?
 
@@ -35,7 +35,7 @@ if __name__ == "__main__":
 
 | Provide your answer here. | ?? 
 | ------------------------- |
-|            data           |
+|            computationally| (we are not using a spave but dong computations)
 
 > [!TIP]
 >
@@ -93,7 +93,7 @@ if __name__ == "__main__":
 
 | Provide your answer here. | ??
 | ------------------------- |
-|           data                |
+|           computational   |
 
 9. What is the time complexity of the following code?
 
@@ -133,7 +133,7 @@ if __name__ == "__main__":
 
 | Provide your answer here. |
 | ------------------------- |
-|            data               |
+|            data           |
 
 12. Compare the following scripts; which one do you prefer and why?
 
@@ -315,7 +315,7 @@ if __name__ == "__main__":
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|           logn            |
 
 23. The following script generates all the possible permutations of a given list. Without running the script, can you define the time complexity of this script?
 
@@ -335,13 +335,13 @@ if __name__ == "__main__":
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|           n2                |
 
 24. What is the length of the output list if the input list has 5 numbers?
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|           125                |
 
 25. What is the computational complexity of the following script?
 
@@ -353,9 +353,9 @@ if __name__ == "__main__":
   print(binary_search(bubble_sort(data), 10))
 ```
 
-| Provide your answer here. |
+| Provide your answer here. | ??
 | ------------------------- |
-|                           |
+|         log( n ^ 2)                  |
 
 ### BDA Seminar 1 - Part 2
 
@@ -404,11 +404,14 @@ if __name__ == "__main__":
 ```python
 def count_pass(file_path):
   # Provide your Python script here
-  
+  count = 0
+  with open(file_path, 'r',encoding='ISO-8859-1') as file:
+    for line in file:
+      count += 1; 
 
 ## Use the following main
 if __name__ == "__main__":
-  print(count_pass('rockyou.txt'))
+  print(count_pass("session1/solutions/rockyou.txt"))
 ```
 
 > There are 14344391 passwords; make sure your result is correct.
@@ -421,7 +424,7 @@ if __name__ == "__main__":
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|           O(n)            |
 
 6. Create a `search_password` function to search for a password in a given file.
 
@@ -430,7 +433,15 @@ if __name__ == "__main__":
 import os
 
 def search_password(file_path, target_password):
-    # Provide your solution here
+  # Provide your solution here
+  start = time.time()
+  with open(file_path, 'r',encoding='ISO-8859-1') as file:
+        for line in file:
+            if ''.join(line.splitlines()) == target_password:
+              return True
+        return False
+  end = time.time()
+  print(f'Total time:', round(end- start, 4))
 
 
 if __name__ == "__main__":
@@ -445,15 +456,15 @@ if __name__ == "__main__":
 
 7. Calculate the time to find:
 
-* 1234
-* 1233242432
-* mary
+* 1234 - 0.004
+* 1233242432 - not found
+* mary - 0.011
 
 8. Does your input affect the time complexity?
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|         no                |
 
 **:mount_fuji: The following tasks are challenging.**
 
@@ -477,11 +488,32 @@ if __name__ == "__main__":
 
 ```
 
+
+ans 
+```python
+def check_duplicates1(file_path):
+  	# Provide your solution here
+    with open(file_path, 'r', encoding = 'ISO-8859-1') as file:
+        words = []
+        for line in file:
+          if len(words) < 25:
+            words.append(''.join(line.splitlines()))
+
+        for i in range(len(words)):
+           for j in range(len(words)):
+              if words[i] == words[j]:
+                 return True
+              
+if __name__ == "__main__":
+    file_path = "session1/solutions/rockyou.txt"
+    print(check_duplicates1(file_path))
+```
+
 10. What is the space complexity?
 
 | Provide your answer here. |
 | ------------------------- |
-|                           |
+|            O(n)           |
 
 11. Create a script to find the duplicated records in the `rockyou.tx`t file.
 
@@ -489,18 +521,32 @@ if __name__ == "__main__":
 - Print a set of the duplicated values at the end.
 
 ```python
+
 def check_duplicates2(file_path):
-    # Provide your solution here
+  # Provide your solution here
+  with open(file_path, 'r', encoding = 'ISO-8859-1') as file:
+    words = []
+    for line in file:
+      if len(words) < 25:
+        words.append(''.join(line.splitlines()))
+
+  wordsSet = set()
+  for i in range(len(words)):
+      for j in range(len(words)):
+        if words[i] == words[j]:
+            wordsSet.add(words[j])
+  print(wordsSet)
 
 if __name__ == "__main__":
-    file_path = "rockyou.txt"
-    check_duplicates2(file_path)
+  file_path = "session1/solutions/rockyou.txt"
+  check_duplicates2(file_path)
 ```
 
 12. What is this script's time and space complexity if you don't use a set? What is when using sets?
 
 | Provide your answer here. |
 | ------------------------- |
-| Time:                     |
-| Space:                    |
+| Time:      o(n^2)    not using set
+            o(n)  with set  |
+| Space:     O(n)           |
 
