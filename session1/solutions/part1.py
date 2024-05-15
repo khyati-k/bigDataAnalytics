@@ -25,8 +25,8 @@
 # if __name__ == "__main__":
 #   data = [10, 9, 88, 7, 62, 5, 43]
 #   print(bubble_sort_count3(data))
-import time
-from itertools import permutations
+# import time
+# from itertools import permutations
 
 # def all_permutations(elements):
 #     return list(permutations(elements))
