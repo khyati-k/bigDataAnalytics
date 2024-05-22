@@ -47,5 +47,5 @@ def parallel_runner2(secs):
 
 if __name__ == '__main__':
     secs = [1,2,3]
-    serial_runner2(secs)
+    # serial_runner2(secs)
     parallel_runner2(secs)
