@@ -50,6 +50,6 @@ def process_runner(arange):
 
 if __name__ == '__main__':
     arange = 20000
-    serial_runner(arange)
-    thread_runner(arange)
-    process_runner(arange)
+    serial_runner(arange) #in theory this should take less time than parallel threads
+    thread_runner(arange) #in theory this should take more time than parallel threads
+    process_runner(arange) #quickest of the three

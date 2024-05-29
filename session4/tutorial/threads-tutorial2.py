@@ -37,6 +37,6 @@ def parallel_runner4(secs):
     print(f'Parallel (thread pool map): {end - start} second(s)')
 
 if __name__ == '__main__':
-    secs = [1, 2, 3]
+    secs =[ 1, 2, 3]
     serial_runner2(secs)
     parallel_runner4(secs)
